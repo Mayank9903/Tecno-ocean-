@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Techno Ocean — Submit Review </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body bgcolor="#F6FBFA">
+
+
+  <table class="layout" width="100%"  border="0" bgcolor="#ffffff">
+    <tr>
+      <td><h1 style="margin:0;">📝 Submit Your Review</h1></td>
+      <td align="right">
+        <a href="index.html">Home</a> |
+        <a href="reviews.html">Reviews</a> |
+        <a href="compare.html">Compare</a> |
+        <a href="submit.html">Submit</a> |
+        <a href="login.html">Login</a>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+
+  <table width="96%" align="center"  border="1" bgcolor="#ffffff">
+    <tr>
+      <td>
+        <form action="#" method="post" onsubmit="return submitReview();">
+          
+            <legend><strong>Your Details</strong></legend>
+            <label for="name">Name:</label><br>
+            <input id="name" name="name" type="text" placeholder="Your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </fieldset>
+
+          <br>
+
+          
+            <legend><strong>Phone Reviewed</strong></legend>
+            <label for="phone">Model:</label><br>
+            <input id="phone" name="phone" type="text" placeholder="e.g., Vivo X200 Pro" required><br><br>
+
+            <label for="rating">Rating (1–5):</label><br>
+            <input id="rating" name="rating" type="number" min="1" max="5" placeholder="5" required><br><br>
+
+            <label>Would you recommend?</label><br>
+            <input type="radio" id="rec-yes" name="recommend" value="yes" checked>
+            <label for="rec-yes">Yes</label>
+            <input type="radio" id="rec-no" name="recommend" value="no">
+            <label for="rec-no">No</label><br><br>
+
+            <label>Highlights (choose any):</label><br>
+            <input type="checkbox" id="chk-camera" name="highlights" value="camera">
+            <label for="chk-camera">Camera</label>
+            <input type="checkbox" id="chk-battery" name="highlights" value="battery">
+            <label for="chk-battery">Battery</label>
+            <input type="checkbox" id="chk-display" name="highlights" value="display">
+            <label for="chk-display">Display</label><br><br>
+
+            <label for="summary">Short Review:</label><br>
+            <textarea id="summary" name="summary" rows="5" cols="40" placeholder="Write a short review..." required></textarea>
+          </fieldset>
+
+          <br>
+          <input type="submit" value="Submit Review">
+          <input type="reset" value="Reset">
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <marquee bgcolor="#F0FFDA" scrollamount="6">Pro tip: Be specific — camera, battery, display, performance.</marquee>
+
+</body>
+</html>
